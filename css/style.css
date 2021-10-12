@@ -1,0 +1,408 @@
+:root {
+    --fuenteHeadings : 'Kanit', sans-serif;
+    --fuenteParrafos : 'Ubuntu', sans-serif;
+
+    --colorBody : #A1FCFC ;
+    --principal: #07D1B6 ;
+    --secundario : #df6603 ;
+    --blanco : #ffffff;
+    --negro : #000000;
+    --naranjaOscuro : #fa8e00 ;
+}
+
+/* Globales */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+      font-family: var(--fuentePrincipal);
+      font-size: 1.6rem;
+      line-height: 1.6;
+      background-color: var(--colorBody);
+  }
+
+  body.fijar-body {
+      overflow: hidden;
+  }
+
+  /* Globales */
+  .contenedor {
+      max-width: 120rem;
+      margin: 0 auto;
+      width: 90%;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  h1, h2, h3, h4 {
+      font-family: var(--fuenteHeadings);
+      color: #07D1B6 ;
+      line-height: 1;
+  }
+
+  p {
+      font-family: var(--fuenteParrafos);
+  }
+
+  h1 {
+      font-size: 4.8rem;
+  }
+  h2 {
+font-size: 4rem;
+  }
+  h3{
+    font-size: 3.2rem;
+  }
+  h4 {
+      font-size: 2.8rem;
+  }
+
+ img {
+      max-width: 100%;
+  } 
+
+  /* Utilidades */
+  .no-margin {
+      margin: 0;
+  }
+  .no-padding {
+      padding: 0;
+  }
+  .centrar-texto {
+      text-align: center;
+  }
+
+  /* Header */
+
+  .header {
+      height: 40rem;
+      background-image: url(/img/headerimg.jpg);
+  }
+
+  @media ( min-width: 768px ) {
+    .header {
+        height: 55rem;
+      }
+  }
+
+
+  .logo img {
+    height: 27rem;
+    border-radius: 25%;
+  }
+
+  @media ( min-width: 768px ) {
+      .logo img {
+          height: 35rem;
+          
+      }
+  }
+
+  /* Navegacion */
+
+  .contenido-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media ( min-width : 768px ) {
+    .navegacion {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+
+    }
+ }
+
+  .navegacion a {
+    display: block;
+    text-align: center;
+    color: var(--blanco);
+    font-size: 2.4rem;
+    font-family: var(--fuenteHeadings);
+}
+
+.navegacion a:hover {
+    color: var(--secundario);
+}
+
+@media ( min-width : 768px ) {
+    .navegacion a {
+        margin-right: 2rem;
+    }
+}
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+
+
+  /* Sabores y Precios */
+  .principal h1 {
+    text-align: center;
+  }
+
+  @media ( min-width : 768px ) {
+    .sabores-precios{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+       
+
+    }
+  
+ }
+
+ @media ( min-width : 768px ) {
+     .sabores {
+         display: grid;
+         grid-template-columns: repeat(2, 1fr);
+         
+     }
+ }
+
+ .lista-sabores {
+     text-align: center;
+     list-style: none;
+ }
+
+ .lista-sabores h3 {
+     color: #07D1B6 ;
+ }
+
+ .gustos:hover {
+    color: var(--secundario);
+    cursor: pointer; 
+    font-size: 1.8rem;
+}
+
+ .precios {
+     padding-top: 1.5rem;
+ }
+ .precios img {
+     border-radius: 3rem; 
+     height: 74rem;
+ }
+
+
+/* Nosotros */
+
+.nosotros h2 {
+    text-align:center;
+    color: var(--principal);
+}
+.contenedor-nosotros {
+    margin-bottom: 2rem;
+    
+}
+@media ( min-width : 770px ) {
+    .contenedor-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) ;
+        column-gap: 2rem;
+    }
+}
+
+.texto-nosotros  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.texto-nosotros p {
+    font-size: 1.8rem;
+    padding-bottom: 2rem;
+
+}
+
+blockquote {
+    text-align: end;
+    font-size: 1.8rem;
+    color: var(--secundario);
+}
+
+/* Redes Sociales */
+.redes-sociales {
+    -webkit-box-shadow: 7px 6px 5px -1px rgba(87,85,85,0.74);
+-moz-box-shadow: 7px 6px 5px -1px rgba(87,85,85,0.74);
+box-shadow: 7px 6px 5px -1px rgba(87,85,85,0.74);
+background-color: var(--blanco);
+border-radius: 2rem;
+ margin-top: 2rem;
+}
+.redes-sociales h3 {
+    text-align: center;
+    font-family: var(--fuenteParrafos);
+    font-size: 2.4rem;
+    padding-top: 2rem;
+    color: var(--secundario);
+}
+
+.contenedor-redes {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media ( min-width : 768px ) {
+    .contenedor-redes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+    .red p {
+        text-align: center;
+        color: var(--secundario);
+        margin-bottom: 1rem;
+        font-size: 2.4rem;
+    }
+
+.icono {
+    text-align: center;
+}
+
+/* Galeria */
+
+
+ .galeria h2 {
+        text-align: center;
+    }
+
+    .contenedor-galerias {
+        padding: 0;
+        list-style: none;
+        margin: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .contenedor-galerias li {
+        margin-bottom: 2rem;
+    }
+
+@media ( min-width : 768px ) {
+    .contenedor-galerias {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 2rem;
+    }
+    
+}
+
+/* JS Galeria */
+
+.overlay img {
+    width: 45rem;
+}
+
+.overlay  {
+    position: fixed;
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: grid;
+    place-items: center;
+}
+
+.btn-cerrar {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--blanco);
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    font-size: 2rem;
+    border-radius: 50%;
+}
+
+.btn-cerrar:hover {
+    cursor: pointer;
+}
+
+
+
+/*  Footer */
+.footer {
+    background-color: var(--secundario);
+    height: 35rem;
+}
+
+@media ( min-width : 480px ) {
+    .footer {
+            
+            height: 30rem;
+    }
+ }
+
+ @media ( min-width : 768px ) {
+    .footer {
+            
+            height: 20rem;
+    }
+ }
+
+.barra {
+    text-align: center;
+    padding-top: 5rem;
+}
+
+
+@media ( min-width : 768px ) {
+    .barra {
+        padding-top: 5rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       
+    }
+}
+
+
+.logo2 img {
+    height: 10rem;
+    border-radius: 2rem;
+}
+
+@media ( min-width : 768px ) {
+    .telefono {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+}
+
+
+
+.telefono p {
+    color: var(--negro);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+    text-align: center;
+}
+
+
+.copy {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2rem;
+    
+}
+
+
+
+
