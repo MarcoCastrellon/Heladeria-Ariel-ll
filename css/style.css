@@ -213,23 +213,38 @@ font-size: 4rem;
     }
 }
 
-.texto-nosotros  {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
 
 .texto-nosotros p {
     font-size: 1.8rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.mapa {
+    text-align:center;
+}   
+
+
+
+@media ( min-width : 770px ) {
+    .texto-nosotros  {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .texto-nosotros p {
+        text-align: start;
+    }
 
 }
 
-blockquote {
-    text-align: end;
-    font-size: 1.8rem;
-    color: var(--secundario);
-}
+
+.mapa {
+    text-align:center;
+}   
+
+
 
 /* Redes Sociales */
 .redes-sociales {
