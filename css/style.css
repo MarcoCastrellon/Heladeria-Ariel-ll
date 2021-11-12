@@ -1,5 +1,5 @@
 :root {
-    --fuenteHeadings : 'Kanit', sans-serif;
+    --fuenteHeadings :  'Gluten', cursive;
     --fuenteParrafos : 'Ubuntu', sans-serif;
 
     --colorBody : #A1FCFC ;
@@ -192,6 +192,7 @@ font-size: 4rem;
  .precios img {
      border-radius: 3rem; 
      height: 74rem;
+     width: 74rem;
  }
 
 
